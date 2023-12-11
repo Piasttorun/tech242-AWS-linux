@@ -15,4 +15,13 @@ an example of things movign to cloud is games, games used to be cartages and cd'
 Dev ops is worth 6 Billion. in terms of market share aorund 20% is expected by 2030
 
 ## dev ops pillars
-![Alt text](images/Assessing-DevOps.png) 
+![pillars of dev ops](images/Assessing-DevOps.png) 
+
+
+## aws 
+aws, azure and google are all cloud services.
+they alow you to use the cloud, host your data online.
+
+## points of presence
+![PoP](images/cf_map_2019_2.png)
+
