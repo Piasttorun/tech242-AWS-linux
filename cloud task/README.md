@@ -7,7 +7,7 @@
 - virtual servers pay as you go and as a service business model.
 - hostsed online
 
-## models
+## models (public, private, community, private)
 ![types of model, public, private, community, private](images/4-types-of-service-models.png)
 
 ## example of moving
@@ -23,6 +23,7 @@ Dev ops is worth 6 Billion. in terms of market share aorund 20% is expected by 2
 [aws document](aws.md)
 - aws, azure and google are all cloud services.
 - they alow you to use the cloud, host your data online.
+- they provide access maangement and key management. 
 
 ## points of presence
 ![PoP](images/cf_map_2019_2.png)
