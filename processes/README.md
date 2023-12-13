@@ -5,3 +5,7 @@
 ## they run hte system
 ![](image.png)
 ## system processes wont be linked to a PS sesion command
+## ps aux shows a lot of information
+## sleep <int> sleeps for a couple seconds
+## sleep <int> & does it in the background
+## jobs shows job
