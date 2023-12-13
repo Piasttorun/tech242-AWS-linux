@@ -24,3 +24,4 @@
 ## you can check if yours is still on in the instance tab
 ![Alt text](image-1.png)
 
+![Alt text](image-2.png)

@@ -5,3 +5,5 @@
 ## hold data about the sesssion
 
 ## the session isnt persistaent, you can make it so by adding a export MYNAME=Mateusz in .bashrc
+
+![Alt text](image.png)
