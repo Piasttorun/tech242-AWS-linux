@@ -29,3 +29,6 @@
 ## vim / nano
 ### test editor (I use VIM) press I to insert, then ESC, folowed by :wq! to write and exit file
 ![Alt text](images/image-9.png)
+## whoami
+### output current user
+![Alt text](images/image10.png)
