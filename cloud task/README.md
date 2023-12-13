@@ -29,3 +29,5 @@ Dev ops is worth 6 Billion. in terms of market share aorund 20% is expected by 2
 ![PoP](images/cf_map_2019_2.png)
 ![regions](images/Untitled.png)
 
+## ec2 instances
+![Alt text](image.png)
