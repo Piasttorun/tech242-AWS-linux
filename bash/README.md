@@ -7,3 +7,5 @@
 
 ## if it runs an new machiens its idempotent, it runs on a fresh machine, it runs on a fresh machine
 ![Alt text](images/image2.png)
+
+## environment varaibles are oftne used to hold senstive data, our java rpograms will access data from those environment variables.
