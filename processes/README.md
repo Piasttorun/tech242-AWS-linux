@@ -9,3 +9,9 @@
 ## sleep <int> sleeps for a couple seconds
 ## sleep <int> & does it in the background
 ## jobs shows job
+## kill termiantes a processs
+### only kill when you know what you are doing, you made hte process you cannot termiante it another way so you have to kill it.
+### kill, kill -9 <process id>, brute force kill
+### a process can start another process, hteare child processes, beasue of this you man have to kill recursively, this can cause amny problems.
+### zombie programs, the -9 kill can kill parents and the childen will remain doing nothing.
+### thsi is why kill -9 brute force is dangerous.
