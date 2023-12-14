@@ -13,3 +13,5 @@
 ## how to sort out kernel user interaction, bad for automation
 ## despite having -y in commnd
 ## maven also asks about user input
+### to bypass user input DEBIAN_FRONTEND=noninteractive
+## scp -i ~/.ssh/tech242.pem ~/Documents/sendthisover.txt ubuntu@ec2-34-241-219-7.eu-west-1.compute.amazonaws.com:~
