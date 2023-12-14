@@ -15,3 +15,65 @@
 ## maven also asks about user input
 ### to bypass user input DEBIAN_FRONTEND=noninteractive
 ## scp -i ~/.ssh/tech242.pem ~/Documents/sendthisover.txt ubuntu@ec2-34-241-219-7.eu-west-1.compute.amazonaws.com:~
+##
+![Alt text](image.png)
+
+```
+#!/bin/bash
+
+# update
+echo "updating ..."
+sudo apt update -y
+echo "done"
+echo ""
+# upgrade
+echo "upgrading..."
+sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
+echo "done"
+echo ""
+# install maven
+echo "installing maven..."
+sudo DEBIAN_FRONTEND=noninteractive apt install maven -y
+echo "done"
+echo ""
+# check maven
+echo "checking maven..."
+mvn -version
+echo "done"
+echo ""
+# install JDK java 17
+echo "installing java 17..."
+sudo DEBIAN_FRONTEND=noninteractive apt install openjdk-17-jdk -y
+echo "done"
+echo ""
+# check JDK 17
+echo "checking java 17..."
+java -version
+javac -version
+echo "done"
+echo ""
+# install git
+echo "installing git..."
+sudo DEBIAN_FRONTEND=noninteractive apt install git -y
+echo "done"
+echo ""
+# check git
+echo "checking git..."
+git --version
+echo "done"
+echo ""
+# git clone repo
+echo "cloning repo..."
+git clone https://github.com/Piasttorun/tech242-jsonvoorhees-app
+echo "done"
+echo ""
+## run
+echo "running..."
+cd tech242-jsonvoorhees-app/springapi/
+mvn spring-boot:start
+echo "done"
+echo ""
+```
+## To explain this code it updates, DEBIAN_FRONTEND disallows the output of a new window
+## we always check --versions for debuging reasons
+## this code made a working repo
