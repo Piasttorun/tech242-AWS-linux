@@ -9,3 +9,7 @@
 ![Alt text](images/image2.png)
 
 ## environment varaibles are oftne used to hold senstive data, our java rpograms will access data from those environment variables.
+
+## how to sort out kernel user interaction, bad for automation
+## despite having -y in commnd
+## maven also asks about user input
