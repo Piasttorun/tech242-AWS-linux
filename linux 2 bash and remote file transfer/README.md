@@ -77,8 +77,8 @@ echo ""
 
 echo "proxy setting up"
 # Define variables
-DOMAIN="52.51.232.194"
-TARGET_IP="52.51.232.194"
+DOMAIN=$(curl ifconfig.me)
+TARGET_IP=$(curl ifconfig.me)
 TARGET_PORT="5000"
 
 
