@@ -64,12 +64,13 @@ echo "done"
 echo ""
 # git clone repo
 echo "cloning repo..."
-git clone https://github.com/Piasttorun/tech242-jsonvoorhees-app
+cd ~
+git clone https://github.com/Piasttorun/tech242-jsonvoorhees-app repo
 echo "done"
 echo ""
 ## run
 echo "running..."
-cd tech242-jsonvoorhees-app/springapi/
+cd ~/repo/springapi/
 mvn spring-boot:start
 echo "done"
 echo ""
