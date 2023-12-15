@@ -16,6 +16,7 @@
 ### to bypass user input DEBIAN_FRONTEND=noninteractive
 ## scp -i ~/.ssh/tech242.pem ~/Documents/sendthisover.txt ubuntu@ec2-34-241-219-7.eu-west-1.compute.amazonaws.com:~
 ##
+## we test manually first, then we script, then we script, and then on a fresh machine, then with user data, then with an AMI
 ![Alt text](image.png)
 
 ```
