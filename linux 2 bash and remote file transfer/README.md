@@ -117,3 +117,49 @@ echo ""
 ## we always check --versions for debuging reasons
 ## this code made a working repo
 ## code updated to work with apache reverse proxy
+## here is the code for the apache bash script user data for the ami tempalte creation
+
+```
+#!/bin/bash
+
+# run
+echo "running..."
+cd ~/repo/springapi/
+mvn spring-boot:start
+echo "done"
+echo ""
+
+echo "proxy setting up"
+# Define variables
+DOMAIN=$(curl ifconfig.me)
+TARGET_IP=$(curl ifconfig.me)
+TARGET_PORT="5000"
+
+# Enable necessary Apache modules
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+sudo a2enmod proxy_balancer
+sudo a2enmod lbmethod_byrequests
+
+# Create a virtual host configuration file
+sudo tee /etc/apache2/sites-available/reverse-proxy.conf > /dev/null <<EOL
+<VirtualHost *:80>
+    ServerName $DOMAIN
+
+    ProxyPreserveHost On
+    ProxyPass / http://$TARGET_IP:$TARGET_PORT/
+    ProxyPassReverse / http://$TARGET_IP:$TARGET_PORT/
+
+    ErrorLog \${APACHE_LOG_DIR}/error.log
+    CustomLog \${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+EOL
+
+# Enable the virtual host
+sudo a2ensite reverse-proxy
+
+# Reload Apache to apply changes
+sudo systemctl reload apache2
+echo "done"
+echo ""
+```
