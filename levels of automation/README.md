@@ -61,3 +61,4 @@ echo ""
 
 ![working](image-1.png)
 ## it worked
+## to add user data you need to go to more settign at the bottom when creating a  vm and then pate the code of the script into that area.
