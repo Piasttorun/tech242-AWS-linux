@@ -166,3 +166,4 @@ echo ""
 
 ## to delete an AMi you need to de register it, they also have a snapshot id
 ## you have to delete the snapshots manually in the isntances section 
+![Alt text](image-3.png)
