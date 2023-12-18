@@ -168,3 +168,16 @@ echo ""
 ## to delete an AMi you need to de register it, they also have a snapshot id
 ## you have to delete the snapshots manually in the isntances section 
 ![Alt text](image-3.png)
+# changes file with Ramon
+
+```
+ProxyPass / http://localhost:5000/
+```
+sed -i 'N a\your line of code' /etc/apache2/sites-available/000-default.conf
+
+if grep -q 'ProxyPreserveHost On' /etc/apache2/sites-available/000-default.conf; then
+    echo "Reverse proxy already configured."
+else
+    sudo sed -i '/DocumentRoot \/var\/www\/html/ a\ProxyPreserveHost On\nProxyPass \/ http:\/\/localhost:5000\/\nProxyPassReverse \/ http:\/\/localhost:5000\/\n' /etc/apache2/sites-available/000-default.conf
+fi
+
