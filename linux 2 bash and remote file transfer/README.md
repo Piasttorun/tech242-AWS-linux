@@ -171,8 +171,6 @@ echo ""
 # changes file with Ramon
 
 ```
-ProxyPass / http://localhost:5000/
-```
 sed -i 'N a\your line of code' /etc/apache2/sites-available/000-default.conf
 
 if grep -q 'ProxyPreserveHost On' /etc/apache2/sites-available/000-default.conf; then
@@ -180,4 +178,6 @@ if grep -q 'ProxyPreserveHost On' /etc/apache2/sites-available/000-default.conf;
 else
     sudo sed -i '/DocumentRoot \/var\/www\/html/ a\ProxyPreserveHost On\nProxyPass \/ http:\/\/localhost:5000\/\nProxyPassReverse \/ http:\/\/localhost:5000\/\n' /etc/apache2/sites-available/000-default.conf
 fi
+```
+# this command conatins a if selection htat decided whether the files already has the necessary modificatiosn or if it needs to be changes, it then looks for a specifc line of text and inserts necessary code immedietly afterwords
 
