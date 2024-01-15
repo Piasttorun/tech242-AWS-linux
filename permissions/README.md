@@ -1,7 +1,7 @@
 # permissions
 ## all files have permsiions
 ## files have default permsiions
-## check permissions ls -a
+## check permissions ls -a 
 ## to change ther are many options 7 is the code for all 0 is for none
 ## chmod changes permissioons
 ## rwx and ugo
